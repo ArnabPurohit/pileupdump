@@ -123,7 +123,7 @@ pileupdump::pileupdump(const edm::ParameterSet& iConfig)
    tree_->Branch("puTrue",        &puTrue_);
 
    hPU_        = fs->make<TH1F>("hPU",        "number of pileup",      200,  0, 200);
-   hPUTrue_    = fs->make<TH1F>("hPUTrue",    "number of true pilepu", 100, 0, 200);
+   hPUTrue_    = fs->make<TH1F>("hPUTrue",    "number of true pilepu", 100, 0, 100);
    hGenWeight_ = fs->make<TH1F>("hGenWeight", "Gen weights",           2,    0, 2);
    hSumGenWeight_ = fs->make<TH1F>("hSumGenWeight", "Sum of Gen weights",1, 0, 1);
 }
